@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 import fresh_tomatoes
 import tmdbsimple
 import media
@@ -8,9 +8,14 @@ tmdbsimple.API_KEY = "55cea4314826ba3b2d476431860d756f"
 
 
 def get_movie_info(ids):
+    """ Takes the ids of each movie and fetches data from
+    themoviedatabase.org
+    """
     for x in range(0, 6):
         movie = movie = tmdbsimple.Movies(movie_ids[x])
+        # Provides basic movie data
         movie_info = movie.info()
+        # Provides the movie trailer
         movie_videos = movie.videos()
         create_movie = media.Movie(movie.title,
                                     "https://image.tmdb.org/t/p/w300_and_h450_bestv2/" +  # NOQA
@@ -26,4 +31,3 @@ movies = []
 
 get_movie_info(movie_ids)
 fresh_tomatoes.open_movies_page(movies)
-
