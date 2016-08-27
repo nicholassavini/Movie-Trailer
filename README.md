@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Fresh Tomatoes is a program written in Python 2.7 that displays the Title, Movie Poster, and Movie Trailer for any 6 movies that you choose (currently set to my favorite 6 movies). 
+Fresh Tomatoes is a program written in Python 2.7 that displays the Title, Movie Poster, and Movie Trailer for any 6 movies that you choose (currently set to my favorite 6 movies). You will need to createa a free account on themoviedatabase.org in order to obtain an API key.
 
 ## Installation
 

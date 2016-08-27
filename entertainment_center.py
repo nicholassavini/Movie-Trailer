@@ -4,7 +4,9 @@ import tmdbsimple
 import media
 
 
-tmdbsimple.API_KEY = "55cea4314826ba3b2d476431860d756f"
+# After creating an account at themoviedatabase.org, you can add your API
+# Key below
+tmdbsimple.API_KEY = ""
 
 
 def get_movie_info(ids):
@@ -30,4 +32,5 @@ movie_ids = [680, 59436, 1891, 812, 421, 2292]
 movies = []
 
 get_movie_info(movie_ids)
+# Uses the list of Movie instances to generate an HTML file that shows trailers
 fresh_tomatoes.open_movies_page(movies)
